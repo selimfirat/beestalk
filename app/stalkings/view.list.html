@@ -1,0 +1,16 @@
+<div class="m-b-lg">
+    <div ng-repeat="stalking in stalkings" on-long-press="toEdit(stalking._id)" on-touch-end="toBee(stalking._id)" class="panel-card stalkingCard p clearfix m-b-sm r">
+        <a class="pull-left m-r">
+            <img ng-src="{{ stalking.pictureUri }}" class="w-24 rounded">
+        </a>
+        <div class="pull-right text-md text-muted">
+            <i class="fa fa-facebook ng-hide m-l-sm" ng-show="stalking.facebook.username"></i>
+            <i class="fa fa-twitter ng-hide m-l-sm" ng-show="stalking.twitter.username"></i>
+            <i class="fa fa-instagram ng-hide m-l-sm" ng-show="stalking.instagram.username"></i>
+        </div>
+        <div class="clear">
+            <div><a class="text-md">{{stalking.displayName}}</a></div>
+        </div>
+    </div>
+</div>
+<a ui-sref="user.newStalking" class="md-btn md-fab md-fab-bottom-right pos-fix newStalking"><i class="mdi-content-add i-24"></i></a>

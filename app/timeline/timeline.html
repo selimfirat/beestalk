@@ -1,0 +1,50 @@
+<div class="row ng-scope padding-out">
+    <div class="col-md-12" ng-repeat="status in statuses">
+      <!-- Instagram Status -->
+      <div ng-if="status.type === 'instagram'">
+        <div class="panel panel-card">
+          <div class="item">
+            <div class="instaWrapper">
+              <img ng-src="{{ status.images.standard_resolution.url }}" class="w-full r-t" alt="">
+              <div class="bottom text-white p instaCaption">
+                {{ status.text }}
+                <div class="instaInfo">
+                  <span style="margin-right: 16px">
+                    <i class="fa fa-instagram"></i> {{ status.stalkingDisplayName }}
+                  </span>
+                    <span class="pull-right">
+                      <i class="fa fa-clock-o"></i> <span am-time-ago="status.created_time | amFromUnix"></span>
+                    </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+  <!-- Twitter Status -->
+    <div ng-if="status.type === 'twitter'">
+      <div class="panel panel-card" style="background-color: rgba(255, 255, 255, 0.1)">
+        <div class="item">
+          <div class="twitWrapper">
+            <div class="w-full r-t"></div>
+            <div class="text-white p instaCaption">
+              {{ status.text }}
+              <div class="instaInfo">
+                <span style="margin-right: 16px">
+                  <i class="fa fa-twitter"></i> {{ status.stalkingDisplayName }}
+                </span>
+                  <span class="pull-right">
+                    <i class="fa fa-clock-o"></i> <span am-time-ago="status.created_time | amFromUnix"></span>
+                  </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    </div>
+  </div>

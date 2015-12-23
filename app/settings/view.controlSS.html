@@ -1,0 +1,12 @@
+<div ng-controller="ControlSSCtrl">
+  <div class="m-b-lg center p">
+      <div class="btn-group-vertical w-full" style="opacity: .85">
+          <button ng-repeat="site in sites" ng-click="(site.connected) ? unlinkSS(site.name) : linkSS(site.name)" type="button" class="btn btn-lg btn-addon c-{{site.name}} pull-left socialSS">
+              <i class="fa fa-{{site.name}}"></i>
+              Link to {{site.name}}
+
+                  <i class="fa fa-circle pull-right" ng-class="(site.connected) ? 'connectedSS' : 'disconnectedSS'"></i>
+          </button>
+      </div>
+  </div>
+</div>

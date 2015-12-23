@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>BeeStalk</title>
+    <meta name="description" content="beestalk" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <link rel="stylesheet" href="libs/assets/animate.css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="libs/assets/font-awesome/css/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="libs/angular/angular-loading-bar/build/loading-bar.css" type="text/css" />
+    <link rel="stylesheet" href="libs/angular/angular-material/angular-material.css" type="text/css" />
+    <link rel="stylesheet" href="libs/jquery/bootstrap/dist/css/bootstrap.css" type="text/css" />
+
+    <link rel="stylesheet" href="app/content/styles/material-design-icons.css" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="app/content/styles/font.css" type="text/css" />
+    <link rel="stylesheet" href="app/content/styles/app.css" type="text/css" />
+</head>
+<body ng-app="app">
+    <div class="app" ui-view ng-controller="AppCtrl"></div>
+
+
+
+    <!-- Cordova -->
+    <!-- <script type="text/javascript" src="cordova.js"></script> -->
+
+    <!-- jQuery -->
+    <script src="libs/jquery/jquery/dist/jquery.js"></script>
+    <script src="libs/jquery/bootstrap/dist/js/bootstrap.js"></script>
+
+    <!-- Angular -->
+    <script src="libs/angular/angular/angular.js"></script>
+    <script src="libs/angular/angular-animate/angular-animate.js"></script>
+    <script src="libs/angular/angular-aria/angular-aria.js"></script>
+    <script src="libs/angular/angular-cookies/angular-cookies.js"></script>
+    <script src="libs/angular/angular-messages/angular-messages.js"></script>
+    <script src="libs/angular/angular-resource/angular-resource.js"></script>
+    <script src="libs/angular/angular-sanitize/angular-sanitize.js"></script>
+    <script src="libs/angular/angular-touch/angular-touch.js"></script>
+    <script src="libs/angular/angular-material/angular-material.js"></script>
+
+    <!-- Vendor -->
+    <script src="libs/angular/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="libs/angular/ngstorage/ngStorage.js"></script>
+    <script src="libs/angular/angular-ui-utils/ui-utils.js"></script>
+    <script src="app/content/scripts/underscore-min.js"></script>
+    <script src="app/content/scripts/moment.min.js"></script>
+    <script src="app/content/scripts/angular-moment.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="libs/angular/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <!-- Lazyload -->
+    <script src="libs/angular/oclazyload/dist/ocLazyLoad.js"></script>
+
+    <!-- loading-bar -->
+    <script src="libs/angular/angular-loading-bar/build/loading-bar.js"></script>
+
+    <!-- App -->
+    <script src="app/module.app.js"></script>
+
+    <!-- Core -->
+    <script src="app/core/module.core.js"></script>
+    <script src="app/core/config.js"></script>
+    <script src="app/core/config.lazyload.js"></script>
+    <script src="app/core/config.router.js"></script>
+    <script src="app/core/ctrl.App.js"></script>
+    <script src="app/core/directives/lazyload.js"></script>
+    <script src="app/core/directives/ui-jp.js"></script>
+    <script src="app/core/directives/ui-nav.js"></script>
+    <script src="app/core/directives/ui-scroll.js"></script>
+    <script src="app/core/directives/ui-toggle.js"></script>
+    <script src="app/core/ui-load.js"></script>
+    <script src="app/core/directives/onLongPress.js"></script>
+
+    <!-- Database -->
+    <script src="app/db/pouchdb-5.1.0.min.js"></script>
+    <script src="app/db/module.db.js"></script>
+    <script src="app/db/service.db.js"></script>
+
+    <!-- API -->
+    <script src="app/api/module.api.js"></script>
+    <script src="app/api/service.api.js"></script>
+
+
+    <!-- Layout -->
+    <script src="app/layout/module.layout.js"></script>
+    <script src="app/layout/ctrl.Aside.js"></script>
+
+    <!-- Access -->
+    <script src="app/access/satellizer.js"></script>
+    <script src="app/access/module.access.js"></script>
+    <script src="app/access/ctrl.Login.js"></script>
+    <script src="app/access/ctrl.Logout.js"></script>
+    <script src="app/access/ctrl.Register.js"></script>
+    <script src="app/access/service.auth.js"></script>
+
+    <!-- Rest -->
+    <script src="app/rest/module.rest.js"></script>
+    <script src="app/rest/service.facebook.js"></script>
+    <script src="app/rest/service.rest.js"></script>
+    <script src="app/rest/service.instagram.js"></script>
+    <script src="app/rest/service.twitter.js"></script>
+
+    <!-- Stalkings -->
+    <script src="app/stalkings/module.stalkings.js"></script>
+    <script src="app/stalkings/service.stalkings.js"></script>
+    <script src="app/stalkings/ctrl.ListStalkings.js"></script>
+    <script src="app/stalkings/ctrl.NewStalking.js"></script>
+    <script src="app/stalkings/ctrl.EditStalking.js"></script>
+
+    <!-- Settings -->
+    <script src="app/settings/module.settings.js"></script>
+    <script src="app/settings/ctrl.ControlSS.js"></script>
+    <script src="app/settings/ctrl.Settings.js"></script>
+
+    <!-- Timeline -->
+    <script src="app/timeline/module.timeline.js"></script>
+    <script src="app/timeline/service.timeline.js"></script>
+    <script src="app/timeline/ctrl.Timeline.js"></script>
+</body>
+</html>

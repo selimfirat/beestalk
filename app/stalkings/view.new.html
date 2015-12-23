@@ -1,0 +1,40 @@
+<div class="card stalkingCard">
+    <div class="card-heading">
+        <h2>New Bee</h2>
+    </div>
+    <div class="card-body bg-stalkingCardInput">
+        <div class="row row-sm">
+            <div class="col-sm-6">
+                <div class="md-form-group">
+                    <input class="md-input md-input-white" ng-model="stalking.displayName" required>
+                    <label>Name</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row row-sm">
+            <form id="newStalkingForm" ng-submit="submit()">
+            <div class="col-sm-6">
+                <div class="md-form-group float-label">
+                    <input class="md-input" ng-model="stalking.facebook.username">
+                    <label>Facebook Username</label>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="md-form-group float-label">
+                    <input class="md-input" ng-model="stalking.twitter.username">
+                    <label>Twitter Username</label>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="md-form-group float-label">
+                    <input class="md-input" ng-model="stalking.instagram.username">
+                    <label>Instagram Username</label>
+                </div>
+            </div>
+            </form>
+                <button form="newStalkingForm" md-ink-ripple class="md-btn md-raised m-b btn-fw bg-white center" style="color: #f1825f">Submit</button>
+        </div>
+    </div>
+</div>

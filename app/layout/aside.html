@@ -1,0 +1,55 @@
+<div class="box asideBox">
+  <div class="box-row">
+    <div class="box-cell scrollable hover">
+      <div class="box-inner">
+        <div id="nav">
+          <nav ui-nav>
+            <ul class="nav">
+            <li ui-sref-active="active">
+              <a md-ink-ripple ui-sref="user.timeline">
+                <i class="icon mdi-av-timer i-20"></i>
+                <span class="font-normal">TIMELINE</span>
+              </a>
+            </li>
+            <li ui-sref-active="active">
+              <a md-ink-ripple ui-sref="user.stalkings">
+                <i class="icon mdi-image-blur-on i-20"></i>
+                <span class="font-normal">BEES</span>
+              </a>
+            </li>
+                <!--
+            <li ui-sref-active="active">
+              <a md-ink-ripple ui-sref="ui.chart">
+                <i class="icon mdi-action-bookmark-outline i-20"></i>
+                <span class="font-normal">BOOKMARKS</span>
+              </a>
+            </li>
+            <li ui-sref-active="active">
+              <a md-ink-ripple ui-sref="ui.stalkings">
+                <i class="icon mdi-action-settings-input-svideo i-20"></i>
+                <span class="font-normal">BEE HIVES</span>
+              </a>
+            </li> -->
+            <li ui-sref-active="active">
+              <a md-ink-ripple ui-sref="user.settings">
+                <i class="icon mdi-action-settings i-20"></i>
+                <span class="font-normal">SETTINGS</span>
+              </a>
+            </li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav>
+        <div class="navAccountBar">
+          <div class="pp">
+              <img ng-src="{{ pictureUri }}" class="w-32 img-responsive rounded">
+            </div>
+        <a class="logout" ui-sref="access.logout">LOG OUT</a>
+        <span class="name">{{ displayName }}</span>
+      </div>
+  </nav>
+</div>
